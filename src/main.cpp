@@ -5,6 +5,12 @@ const char* ssid = "wifi ssid";
 const char* passwd = "wifi password";
 
 void setup_wifi() {
+  /*
+   * setup_wifi() is a method that initializes and/or establishes a connection
+   * from the microcontroller to hotspot
+   *
+   * configure with `ssid` and `passwd` constants
+   */
   WiFi.begin(ssid, passwd);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
